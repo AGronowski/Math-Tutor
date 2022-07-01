@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/andika</item>
+        <item>@font/andika_new_basic</item>
+        <item>@font/b612_mono</item>
+        <item>@font/coda</item>
+        <item>@font/dosis</item>
+        <item>@font/prompt</item>
+        <item>@font/voltaire</item>
+        <item>@font/zilla_slab_light</item>
+    </array>
+</resources>

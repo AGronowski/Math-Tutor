@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <com.example.mathTutor.DrawingView
+        android:id="@+id/drawingViewXML"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/drawingViewXMLTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.mathTutor.DrawingViewTwo
+        android:id="@+id/drawingViewXMLTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/drawingViewXML"
+        app:layout_constraintBottom_toTopOf="@+id/drawingViewXMLThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.mathTutor.DrawingViewThree
+        android:id="@+id/drawingViewXMLThree"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/drawingViewXMLTwo"
+        app:layout_constraintBottom_toTopOf="@id/recognizeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika"
+        android:text="Hello"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/drawingViewXML"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika"
+        android:text="Hello"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/drawingViewXMLTwo"
+        app:layout_constraintEnd_toEndOf="@id/drawingViewXML"
+        app:layout_constraintTop_toTopOf="@id/drawingViewXMLTwo" />
+
+    <TextView
+        android:id="@+id/resultTextThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika"
+        android:text="Hello"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/drawingViewXMLThree"
+        app:layout_constraintEnd_toEndOf="@id/drawingViewXML"
+        app:layout_constraintTop_toTopOf="@id/drawingViewXMLThree" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recognizeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/prompt"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
